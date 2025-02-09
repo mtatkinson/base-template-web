@@ -17,10 +17,31 @@ git clone https://github.com/mtatkinson/base-template-web.git && cd base-templat
 - 🎨 TailwindCSS for styling
 - 🎯 TypeScript for type safety
 - 🎪 Shadcn/UI components
+- 🎨 Lucide Icons
 - 🌓 Dark mode support
 - 📱 Responsive layouts
 - ♿️ Accessibility features
 - 🚀 Best practices and optimizations
+
+## Usage Examples
+
+### Using Lucide Icons
+
+```tsx
+import { Home, Settings, User, Bell } from "lucide-react"
+
+// In your component:
+<Button>
+  <Home className="w-4 h-4 mr-2" />
+  Home
+</Button>
+
+// With Shadcn/UI components:
+<DropdownMenuItem>
+  <Settings className="w-4 h-4 mr-2" />
+  Settings
+</DropdownMenuItem>
+```
 
 ## Getting Started
 

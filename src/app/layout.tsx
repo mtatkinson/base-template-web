@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/providers/theme-provider";
 import "@/styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js Base Template",
-  description: "A professional Next.js base template with TypeScript, TailwindCSS, and Shadcn/UI",
-  keywords: ["Next.js", "React", "TypeScript", "TailwindCSS"],
+  title: "Next.js Template",
+  description: "A modern, feature-rich template showcasing the power of Next.js 14, TypeScript, and Shadcn/UI components.",
 };
 
 export default function RootLayout({
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen bg-background antialiased`}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
